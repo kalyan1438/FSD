@@ -1,3 +1,8 @@
-setTimeout(()=>{
-    console.log("CallBack");
-},2000);
+function say(name,callback){
+    console.log("Name:",name);
+    callback();
+}
+const sam = ()=>{
+    console.log("Hello to you");
+}
+say("Kalyna",sam);
