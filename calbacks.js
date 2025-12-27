@@ -1,8 +1,5 @@
-function say(name,callback){
-    console.log("Name:",name);
-    callback();
-}
-const sam = ()=>{
-    console.log("Hello to you");
-}
-say("Kalyna",sam);
+console.log("Start");
+setTimeout(()=>{
+    console.log("Delay");
+},0)
+console.log("End");
