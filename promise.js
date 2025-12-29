@@ -12,8 +12,5 @@ function process(oId){
 const obatch = ["o1","o2","o3"];
 Promise.all(obatch.map(process)).then((res)=>{
     console.log("All orders are complete");
-    console.table(res);
-    
-    
+    console.table(res);  
 }).catch((e)=>console.log(e));
-
