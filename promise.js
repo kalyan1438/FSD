@@ -14,3 +14,10 @@ Promise.all(obatch.map(process)).then((res)=>{
     console.log("All orders are complete");
     console.table(res);  
 }).catch((e)=>console.log(e));
+
+ const p= new Promise(resolve =()=>{
+    resolve("yes")
+ })
+ p.then((msg)=>{
+    console.log(`hello ${msg}`);
+ })
