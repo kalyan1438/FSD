@@ -15,9 +15,9 @@ Promise.all(obatch.map(process)).then((res)=>{
     console.table(res);  
 }).catch((e)=>console.log(e));
 
- const p= new Promise(resolve =()=>{
+ const pri= new Promise(resolve =()=>{
     resolve("yes")
  })
- p.then((msg)=>{
+ pri.then((msg)=>{
     console.log(`hello ${msg}`);
  })
