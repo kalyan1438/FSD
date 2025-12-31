@@ -8,6 +8,7 @@ const getdata = async (id)=>{
     display.innerHTML=`<h1>User Name:${data.name}</h1><br><p>${data.email}</p>`;
     }
     catch(e){
+        console.error(e);
         alert("Please Enter Vaild Id",e);
     }
 }
