@@ -1,9 +1,9 @@
 function process(oId){
-    return new Promise((reslove,reject)=>{
+    return new Promise((resolve,reject)=>{
         const time = 500 + Math.random()*100 + 5000;
         setTimeout(() => {
-            if(5500<time) reject("Error");
-            reslove({
+            if(5500<time) return reject("Error");
+            resolve({
                 oId,status:"Completed",ptime: Math.round(time)
             });
         },time );
@@ -15,7 +15,7 @@ Promise.all(obatch.map(process)).then((res)=>{
     console.table(res);  
 }).catch((e)=>console.log(e));
 
- const pri= new Promise(resolve =()=>{
+ const pri= new Promise((resolve)=>{
     resolve("yes")
  })
  pri.then((msg)=>{
