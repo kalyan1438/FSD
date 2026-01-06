@@ -4,7 +4,7 @@ const sample = async ()=>{
     const res = await fetch(url);
     const data  = await res.json();
     const dis = document.querySelector("#dis");
-    dis.innerHTML=`<h1> CityName:${data.name}</h1><br>
+    dis.innerHTML=`<h1>CityName:${data.name}</h1><br>
     <h2>Main :</h2> <br>
     ${JSON.stringify({
     "temp": 299.6,
