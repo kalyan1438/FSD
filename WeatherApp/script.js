@@ -3,6 +3,6 @@ const url= `https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=d560
 const sample = async ()=>{
     const res = await fetch(url)
     const data  = await res.json();
-    const dis = document.querySelector("#dis");
+    const dis = document.querySelector("#dis")
     dis.innerHTML=`${JSON.stringify(data)}`;
 }
