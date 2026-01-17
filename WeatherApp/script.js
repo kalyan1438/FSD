@@ -6,5 +6,6 @@ const seample = async ()=>{
     const dis = document.querySelector("#dis")
     dis.innerHTML=`${JSON.stringify(data)}`;
     ///
-    
+    ///
+
 }
