@@ -5,4 +5,6 @@ const seample = async ()=>{
     const data  = await res.json();
     const dis = document.querySelector("#dis")
     dis.innerHTML=`${JSON.stringify(data)}`;
+    ///
+    
 }
