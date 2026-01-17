@@ -7,5 +7,6 @@ const seample = async ()=>{
     dis.innerHTML=`${JSON.stringify(data)}`;
     ///
     ///
+    /// sample
 
 }
